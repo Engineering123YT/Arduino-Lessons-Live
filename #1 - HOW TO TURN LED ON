@@ -1,0 +1,27 @@
+//                                ARDUINO LESSON #1 - HOW TO TURN LED ON
+//----------------------------------------------------------------------------------------------------------//
+//This material was created by 123 Mechatronics as apart of a arduino lesson series, 
+//Enjoyed? Subscribe & Share w/ Friends ➤ https://www.youtube.com/channel/UCoKQptSRxU0hMAqcxwRpe6g/featured
+//----------------------------------------------------------------------------------------------------------//
+//IN THIS LESSON WE WILL BE GOING OVER EVERY ARDUINO USERS FIRST PROJECT, TURNING A LED ON! WE WILL GO THROUGH
+//BASIC PROCEDURES TO BUILD THIS PROJECT AND FUTURE PROJECTS THAT BUILD OFF OF EACH OTHER. BY THE END OF THIS
+//LESSON SERIES I HOPE TO TEACH EVERYONE HOW TO BUILD CUSTOMIZED ROBOTICS, DRONES, AND MORE! SUBSCRIBE TODAY!
+//----------------------------------------------------------------------------------------------------------//
+//
+//                                   🢛🢛🢛 COPY & PASTE CODE BELOW 🢛🢛🢛
+//
+//----------------------------------------------------------------------------------------------------------//
+const int RedLED = 8;  // pin8 = RedLED
+
+// put your setup code here, to run once:
+void setup() {
+pinMode(RedLED,OUTPUT);  //RedLED (or pin8) is defined as an output
+}
+
+// put your main code here, to run repeatedly:
+void loop() {
+digitalWrite(RedLED,HIGH);  //RedLED (or pin8) is given a digital command, HIGH.
+//                            HIGH means ON
+//                            LOW means OFF
+delay(1000);  //delay void loop by 1000 miliseconds (1 second)
+}
